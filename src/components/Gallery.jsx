@@ -3,7 +3,7 @@ import React from 'react';
 import ImageCard from './ImageCard';
 import { BsImage } from 'react-icons/bs';
 
-const Gallary = () => {
+const Gallery = () => {
 	const data = [
 		{
 			image: '/images/image-1.webp',
@@ -44,6 +44,7 @@ const Gallary = () => {
 			templateColumns={'1fr 1fr 1fr 1fr 1fr'}
 			templateRows='1fr 1fr 1fr'
 			gap='20px'
+			p='20px'
 		>
 			{data.map((item, index) => (
 				// {index===0 ?(<ImageCard colSpan={2} rowSpan={2}  key={index} image={item.image} />):null)}
@@ -61,15 +62,15 @@ const Gallary = () => {
 				borderColor='gray.400'
 				justifyContent='center'
 				alignItems='center'
-        cursor='pointer'
-        userSelect='none'
+				cursor='pointer'
+				userSelect='none'
 			>
 				<Flex
 					direction={'column'}
 					justifyContent='center'
 					alignItems='center'
 					h='100%'
-          gap='10px'
+					gap='10px'
 				>
 					<BsImage />
 					<Text>Add Images</Text>
@@ -79,4 +80,4 @@ const Gallary = () => {
 	);
 };
 
-export default Gallary;
+export default Gallery;
