@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import { Flex } from '@chakra-ui/react';
+import React from 'react';
+import Gallary from './components/Gallary.jsx';
+const App = () => {
+	return (
+		<Flex w='70%' py='50px' mx='auto'>
+			<Gallary />
+		</Flex>
+	);
+};
 
 export default App;
