@@ -47,11 +47,9 @@ const Gallery = () => {
 			p='20px'
 		>
 			{data.map((item, index) => (
-				// {index===0 ?(<ImageCard colSpan={2} rowSpan={2}  key={index} image={item.image} />):null)}
 				<ImageCard
 					colSpan={index === 0 ? 2 : 1}
 					rowSpan={index === 0 ? 2 : 1}
-					// rowSpan={2}
 					key={index}
 					image={item.image}
 				/>
