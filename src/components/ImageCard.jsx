@@ -1,4 +1,4 @@
-import { Flex, GridItem, Image } from '@chakra-ui/react';
+import { GridItem, Image } from '@chakra-ui/react';
 import React from 'react';
 
 const ImageCard = ({ image, ...props }) => {
